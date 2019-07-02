@@ -37,18 +37,10 @@ switch (action) {
 function band() {
     var queryURL = "https://rest.bandsintown.com/artists/" + input + "/events?app_id=codingbootcamp";
     
-    // $.ajax({
-    //     url: queryURL,
-    //     method: "GET"
-    // }).then(function(response) {
-    //     console.log(response)
-        
-    // })
     axios
     .get(queryURL)
     .then(function(res) {
-        //console.log(res.data);
-        
+
         console.log("Results for " + input);
 
         for (var i = 0; i < res.data.length; i++){
@@ -65,59 +57,83 @@ function band() {
 
 function spot() {
 
-    spotify.search({ type: 'track', query: input, limit: 1 }, function(err, response) {
+    spotify.search({ type: 'track', query: input, limit: 5 }, function(err, response) {
         if (err) {
           return console.log('Error occurred: ' + err);
         }
        
-    //   console.log(response.tracks.items); 
-    //   for (var i = 0; i < response.tracks.items.length; i++) {
+        console.log("Song Results");
 
-    //     // var songinfo = response.tracks.items[i];
+        if (input !== undefined) {
+            for (var i = 0; i < response.tracks.items.length; i++) {
 
-    //     // console.log(songinfo.artists.external_urls.name);
-    //     console.log(response.tracks.items[i]);
-    //   }
-      });
+                var songinfo = response.tracks.items[i];
+
+                console.log("==================================");
+                console.log("Artist: " + songinfo.album.artists[0].name); 
+                console.log("Song: " + songinfo.name);
+                console.log("Song Preview: " + songinfo.preview_url);
+                console.log("Song Album: " + JSON.stringify(songinfo.album.external_urls))
+                
+        }} else {
+
+            // TODO: else statement to run default code for "The Sign of Ace of Base"
+            
+            // spotify.search({ type: 'track', query: "The Sign by Ace of Base", limit: 5 }, function(err, response) {
+            //     if (err) {
+            //       return console.log('Error occurred: ' + err);
+            //     }
+
+            // })
+            
+        }
+    });
       
 }
 
-//  function movie() {
-//      var queryURL = "http://www.omdbapi.com/?apikey=trilogy&t=" + input;
+ function movie() {
+     var queryURL = "http://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy";
 
-//      axios
-//      .get(queryURL)
-//      .then(function(res) {
+     axios
+     .get(queryURL)
+     .then(function(res) {
         
-//         for (var i = 0; i < res.data.length; i++){
+        // console.log(res.data);
+        // if (input !== undefined) {
 
-//             var movieinfo = res.data[i];
+                var movieinfo = res.data;
+                console.log("You search for: " + input);
+                console.log("=======================================")
+                console.log("Movie title: " + movieinfo.Title); 
+                console.log("Release year: " + movieinfo.Released);
+                console.log("imDb Rating: " + movieinfo.imdbRating); 
+                console.log("Rotten Tomatoes Rating: " + JSON.stringify(movieinfo.Ratings[1])); 
+                console.log("Made in: " + 
+                    movieinfo.Country); 
+                console.log("Language: " + movieinfo.Language); 
+                console.log("Short Plot: " + movieinfo.Plot); 
+                console.log("Actors in the Movie: " + movieinfo.Actors);
 
-//             console.log(movieinfo.Title + " " + 
-//             movieinfo.Released + " " + 
-//             movieinfo.imdbRating + " " + 
-//             movieinfo.Ratings[2] + " " + 
-//             movieinfo.Country + " " + 
-//             movieinfo.Language + " " + 
-//             movieinfo.Plot + " " + 
-//             movieinfo.Actors)
+        // } else {
+        //     // TODO: run Mr. Nobody
+        // }  
 
-//         }
+     }), function(err, data) {
+        if (err) {
+          return console.log('Error occurred: ' + err);
+        }
         
+    }
+    
+ }
 
-//      }), function(err, data) {
-//         if (err) {
-//           return console.log('Error occurred: ' + err);
-//         }
-//     }
-//  }
-// // this will read and append random.txt file
-// // 
-// function runspot() {
-//     fs.appendFile("random.txt", function(err){
-//         if (err) {
-//             return console.log(err);
-//         }
-//     })
-// }
+function runspot() {
+    fs.readFile("random.txt", "utf8", function(err, data){
+        if (err) {
+            return console.log(err);
+        }
+
+        console.log(data);
+    })
+}
    
