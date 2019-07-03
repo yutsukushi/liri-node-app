@@ -14,29 +14,39 @@ The returned results will appear in your terminal, which will include a name and
     <p>To begin, enter in the Terminal: `node liri.js concert-this <artist/band name here>`
 
     The concert-this command returns any concerts of the given artist or band that you're interested in with the venue name, location, and the date of where they will be performing.</p>
-    ![picture alt](\images\concert-this.png)
 </details>
+
+![picture alt](\images\concert-this.png "concert-this command")
+
 <details>
     <summary>`spotify-this-song`</summary>
     <p>To begin, enter in the Terminal: `node liri.js spotify-this-song '<song name here>'`
 
     The spotify-this-song command returns five searches from the Spotify API that is similar or related to the song search provided. LIRI will provide the artist(s), song name, preview link of the song from Spotify, and the album link</p>
-    ![picture alt](\images\spotify-this-song.png)
+    
 </details>
+
+![picture alt](\images\spotify-this-song.png "spotify-this-song command")
+
 <details>
     <summary>`movie-this`</summary>
     <p>To begin, enter in the Terminal: `node liri.js movie-this '<movie name here>'`
 
     The movie-this command returns the movie from the OMDB API that is similar or related to the movie searched. LIRI will provide the title of the movie, release year, IMDB rating, Rotten Tomatoes rating, country where the movie was produced, language, short plot, and actors in the movie.</p>
-    ![picture alt](\images\movie-this.png)
+    
 </details>
+
+![picture alt](\images\movie-this.png "movie-this command")
+
 <details>
     <summary>`do-what-it-says`</summary>
     <p>To begin, enter in the Terminal: `node liri.js do-what-it-says`
     
     The do-what-it-says command will run a default command and search entered in the random.txt file. In the random.txt file, command and search can be changed with any of the above commands and search that you would like.</p>
-    ![picture alt](\images\do-what-it-says.png)
+    
 </details>
+
+![picture alt](\images\do-what-it-says.png "do-what-it-says command")
 
 ## Technologies Used ##
 
