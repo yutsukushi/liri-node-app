@@ -14,9 +14,10 @@ The returned results will appear in your terminal, which will include a name and
     <p>To begin, enter in the Terminal: `node liri.js concert-this <artist/band name here>`
 
     The concert-this command returns any concerts of the given artist or band that you're interested in with the venue name, location, and the date of where they will be performing.</p>
-</details>
 
 ![concert-this command](/images/concert-this.png)
+</details>
+
 
 <details>
     <summary>`spotify-this-song`</summary>
@@ -24,9 +25,10 @@ The returned results will appear in your terminal, which will include a name and
 
     The spotify-this-song command returns five searches from the Spotify API that is similar or related to the song search provided. LIRI will provide the artist(s), song name, preview link of the song from Spotify, and the album link</p>
     
+    
+![spotify-this-song command](/images/spotify-this-song.png)
 </details>
 
-![spotify-this-song command](/images/spotify-this-song.png)
 
 <details>
     <summary>`movie-this`</summary>
@@ -34,9 +36,10 @@ The returned results will appear in your terminal, which will include a name and
 
     The movie-this command returns the movie from the OMDB API that is similar or related to the movie searched. LIRI will provide the title of the movie, release year, IMDB rating, Rotten Tomatoes rating, country where the movie was produced, language, short plot, and actors in the movie.</p>
     
+    
+![movie-this command](/images/movie-this.png)
 </details>
 
-![movie-this command](/images/movie-this.png)
 
 <details>
     <summary>`do-what-it-says`</summary>
@@ -44,9 +47,10 @@ The returned results will appear in your terminal, which will include a name and
     
     The do-what-it-says command will run a default command and search entered in the random.txt file. In the random.txt file, command and search can be changed with any of the above commands and search that you would like.</p>
     
+    
+![do-what-it-says command](/images/do-what-it-says.png)
 </details>
 
-![do-what-it-says command](/images/do-what-it-says.png)
 
 ## Technologies Used ##
 
