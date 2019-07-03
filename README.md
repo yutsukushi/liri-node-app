@@ -16,7 +16,7 @@ The returned results will appear in your terminal, which will include a name and
     The concert-this command returns any concerts of the given artist or band that you're interested in with the venue name, location, and the date of where they will be performing.</p>
 </details>
 
-![picture alt](\images\concert-this.png "concert-this command")
+![concert-this command](\images\concert-this.png)
 
 <details>
     <summary>`spotify-this-song`</summary>
@@ -26,7 +26,7 @@ The returned results will appear in your terminal, which will include a name and
     
 </details>
 
-![picture alt](\images\spotify-this-song.png "spotify-this-song command")
+![spotify-this-song command](\images\spotify-this-song.png)
 
 <details>
     <summary>`movie-this`</summary>
@@ -36,7 +36,7 @@ The returned results will appear in your terminal, which will include a name and
     
 </details>
 
-![picture alt](\images\movie-this.png "movie-this command")
+![movie-this command](\images\movie-this.png)
 
 <details>
     <summary>`do-what-it-says`</summary>
@@ -46,7 +46,7 @@ The returned results will appear in your terminal, which will include a name and
     
 </details>
 
-![picture alt](\images\do-what-it-says.png "do-what-it-says command")
+![do-what-it-says command](\images\do-what-it-says.png)
 
 ## Technologies Used ##
 
