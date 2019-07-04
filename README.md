@@ -2,7 +2,7 @@
 
 LIRI Bot is a command-line interface application that will answer questions on music and movies. LIRI takes user commands and inputs on concerts, songs, and movies and displays back details of the specified search. If a search is not specified, LIRI Bot will return information on a default song or movie. 
 
-## Specifically ##
+## Specifically... ##
 
 The returned results will appear in your terminal, which will include a name and date/release year. For certain commands, it will return a song preview and album link, movie ratings, language, actors, short plot, and locations. In order to use another command, simply, re-enter a command from the provided command list with a dropdown instruction on how to use.
 

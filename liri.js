@@ -11,7 +11,7 @@ var moment = require('moment');
 
 // declaring var to user input on index 2.
 var action = process.argv[2]; //user input of which command they want to use
-var input = process.argv[3]; //user input of which artist they want to look up
+var input = process.argv.slice(3).join(" "); //user input of which artist they want to look up
 
 // switch-case statement for user input of multiple commands:
 function startProg(action, input){
