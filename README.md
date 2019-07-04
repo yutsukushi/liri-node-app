@@ -51,6 +51,8 @@ The returned results will appear in your terminal, which will include a name and
 ![do-what-it-says command](/images/do-what-it-says.png)
 </details>
 
+## Video of LIRI Bot ##
+[LIRI Bot Video](https://drive.google.com/file/d/12P0C4RZlWHAfAj-BFFjmFe1fR1hCx5IV/view)
 
 ## Technologies Used ##
 
@@ -60,3 +62,4 @@ The returned results will appear in your terminal, which will include a name and
 ## App Dev Role ##
 
 I was able to bring LIRI Bot to fruition from start-to-finish with the use of the above technologies. 
+
